@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #1e1e2f;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #111;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .profile-img {
+      max-width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: #00bcd4;
+    }
+
+    footer {
+      background: #1e1e2f;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jane Doe</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <a href="#social">Social</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
+    <p>Hello! I'm Jane, a passionate developer who loves crafting beautiful and functional websites. I specialize in frontend development, UI/UX design, and always eager to learn new technologies.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Coming soon: a showcase of my recent projects with interactive previews and case studies.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:jane@example.com">jane@example.com</a></p>
+    <p>Phone: +1 (234) 567-8901</p>
+  </section>
+
+  <section id="social" class="socials">
+    <h2>Find Me On</h2>
+    <a href="https://github.com/username" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+    <a href="https://twitter.com/username" target="_blank">Twitter</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
