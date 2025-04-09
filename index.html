@@ -3,164 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Everything for your business</title>
+  <title>Portfolio - Everything for Your Business</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f1f3ff;
-      color: #1a1a1a;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7ff;
+      color: #1c1c1c;
+      line-height: 1.6;
     }
-
     header {
+      background: #ffffff;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5rem 2rem;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-
-    .logo {
+    header h1 {
       font-size: 1.5rem;
-      font-weight: bold;
+      color: #000;
     }
-
     nav {
       display: flex;
-      gap: 0.5rem;
+      gap: 1.5rem;
     }
-
     nav a {
-      padding: 0.5rem 1rem;
-      background-color: #f5f5f5;
-      border-radius: 6px;
       text-decoration: none;
-      color: #111;
-      font-weight: 500;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      color: #1c1c1c;
+      font-weight: 600;
+      transition: color 0.3s;
     }
-
     nav a:hover {
-      background-color: #3f51f5;
-      color: #fff;
+      color: #5b69ff;
     }
-
     .hero {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      padding: 3rem 2rem;
-      background-color: #e6eaff;
-      flex-wrap: wrap;
+      padding: 4rem 2rem;
+      text-align: center;
     }
-
-    .hero-text {
-      flex: 1;
-      max-width: 50%;
-      padding-right: 2rem;
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #1c1c1c;
     }
-
-    .hero-text h1 {
-      font-size: 2.8rem;
-      color: #1e1e2f;
-      margin-bottom: 1rem;
+    .hero p {
+      max-width: 600px;
+      margin: 1rem 0 2rem;
+      color: #555;
     }
-
-    .hero-text p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-      color: #333;
-    }
-
-    .hero-text .btn {
-      background-color: #3f51f5;
-      color: #fff;
+    .hero button {
+      background-color: #3e52ff;
+      color: white;
       padding: 0.75rem 1.5rem;
       border: none;
-      border-radius: 4px;
+      border-radius: 8px;
       font-size: 1rem;
       cursor: pointer;
-      text-decoration: none;
     }
-
-    .hero-img {
-      flex: 1;
-      max-width: 50%;
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1c1c1c;
+    }
+    .section p {
+      color: #555;
+    }
+    .socials {
       display: flex;
-      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
     }
-
-    .hero-img img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    .socials a {
+      text-decoration: none;
+      color: #3e52ff;
+      font-weight: bold;
     }
-
     footer {
-      background-color: #fff;
       text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-      color: #777;
-      border-top: 1px solid #ddd;
+      padding: 2rem;
+      background: #eaeaff;
+      margin-top: 2rem;
     }
 
     @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .hero-text, .hero-img {
-        max-width: 100%;
-        padding: 0;
-      }
-
-      .hero-img {
-        margin-top: 2rem;
-      }
-
       nav {
         flex-wrap: wrap;
         justify-content: center;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .section {
+        padding: 2rem 1rem;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">JIMDO</div>
+    <h1>JIMDO</h1>
     <nav>
       <a href="#products">Products</a>
       <a href="#inspiration">Inspiration</a>
       <a href="#pricing">Pricing</a>
       <a href="#blog">Blog</a>
       <a href="#features">Features</a>
-      <a href="#help">Help</a>
-      <a href="#login">Log In</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-text">
-      <h1>Everything for your business</h1>
-      <p>Help your customers find you with a home for your business online. Jimdo has all of the digital tools you need, including a customized, compliant website, an online store that's open 24/7, and more.</p>
-      <a href="#start" class="btn">Start Free</a>
-    </div>
-    <div class="hero-img">
-      <img src="/mnt/data/image.png" alt="Preview" />
+    <h2>Everything for your business</h2>
+    <p>
+      Help your customers find you with a home for your business online. All of the digital tools you need, including a customized, compliant website, online store, and more.
+    </p>
+    <button onclick="alert('Let’s get started!')">Start Free</button>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Me</h3>
+    <p>Hello! I'm a web developer passionate about creating beautiful and functional websites. I specialize in frontend development and love bringing ideas to life on the web.</p>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h3>Portfolio</h3>
+    <p>Check out some of my favorite projects, from eCommerce sites to personal portfolios and landing pages tailored to different industries.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact</h3>
+    <p>Email me at: <a href="mailto:you@example.com">you@example.com</a></p>
+    <div class="socials">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Jimdo. All rights reserved.
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Add any interactivity here if needed
+  </script>
 </body>
 </html>
